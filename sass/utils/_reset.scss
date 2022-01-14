@@ -1,0 +1,63 @@
+body {
+  color: $title-text-color;
+  font-family: $main-font;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  /*@media screen and (min-width: 1200px) {
+    display: fle;
+  }*/
+}
+
+.container {
+  width: 480px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}

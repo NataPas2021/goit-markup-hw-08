@@ -1,0 +1,118 @@
+.pageheader {
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nav {
+  display: flex;
+  position: relative;
+  padding: 25px 0;
+  font-family: inherit;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  position: relative;
+  font-family: inherit;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links__link,
+.contact-info__link {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+
+  transition: color 250ms $timing-function;
+}
+
+.nav-links__link:hover,
+.nav-links__link:focus,
+.nav-links__link:active {
+  color: $accent-color;
+}
+
+.nav-links__item,
+.contact-info__item {
+  position: relative;
+  display: flex;
+}
+
+.nav-links__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.nav-links__link--active {
+  color: $accent-color;
+}
+
+.nav-links__link--active::after {
+  content: '';
+  opacity: 1;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  position: absolute;
+  left: 0;
+  bottom: -33px;
+
+  background-repeat: no-repeat;
+  background-color: $accent-color;
+  color: $title-text-color;
+  border-radius: 2px;
+
+  transition: background-color 250ms $timing-function;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact-info__item:last-child {
+  margin-left: 50px;
+}
+
+.contact-info__link--mail,
+.contact-info__link--telephone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $paragraph-color;
+}
+
+.contact-info__icon-envelope,
+.contact-info__icon-smartphone {
+  fill: #757575;
+  margin-right: 10px;
+  align-items: center;
+
+  transition: fill 250ms $timing-function;
+}
+
+.contact-info__link:hover,
+.contact-info__link:focus {
+  color: $accent-color;
+}
+
+.contact-info__link:hover .contact-info__icon-envelope,
+.contact-info__link:focus .contact-info__icon-envelope,
+.contact-info__link:hover .contact-info__icon-smartphone,
+.contact-info__link:focus .contact-info__icon-smartphone {
+  fill: $accent-color;
+}
