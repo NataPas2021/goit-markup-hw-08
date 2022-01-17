@@ -8,7 +8,8 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $title-text-color;
-  margin-right: 93px;
+  margin-left: 0;
+  margin-right: 0px;
   .logo__text--blue {
     font-family: $logo-font;
     color: $accent-color;
@@ -22,5 +23,13 @@
   .logo__text--white {
     font-family: $logo-font;
     color: $background-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
   }
 }

@@ -1,10 +1,6 @@
 .modal {
-  position: relative;
-  left: 50%;
-  top: 50%;
-
-  width: 528px;
-  height: 581px;
+  width: calc(100% - 30px);
+  height: 609px;
   padding: 40px;
 
   font-family: $main-font;
@@ -14,10 +10,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: calc(100% - 60px);
 
-  transition: transform 250ms $timing-function, opacity 250ms $timing-function;
+    /*width: calc(100% - 318px);*/
+    opacity: 1;
+    transition: transform 250ms $timing-function, opacity 250ms $timing-function;
+  }
+
+  /*@media screen and (min-width: 1200px) {
+    
+  }*/
 }
 
 .modal__title {

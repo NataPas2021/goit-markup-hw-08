@@ -1,20 +1,27 @@
 .projects {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin-left: calc(-1 * 30px);
-  margin-top: calc(-1 * 30px);
+
   font-family: $main-font;
 
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
+
   .project__item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+    display: flex;
+    flex-basis: inherit;
+    margin-bottom: 30px;
 
     overflow: hidden;
 
     cursor: pointer;
-    display: flex;
-    width: 370px;
+
+    flex-basis: calc(100% - 30px);
     height: 404px;
     border: 1px solid #eeeeee;
 
@@ -26,7 +33,24 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
   }
+}
+
+.project-link {
+  flex-basis: calc(100% -30px);
 }
 
 .project__thumb {
@@ -66,10 +90,14 @@
 }
 
 .project__content {
+  flex-basis: calc(100% - 30px);
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  @media screen and (min-width: 768px) {
+  }
 
   .project__name {
     font-weight: 700;
