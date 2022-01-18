@@ -3,7 +3,7 @@ body {
   font-family: $main-font;
   letter-spacing: 0.03em;
 
-  &.modal-open {
+  .modal-open {
     overflow: hidden;
   }
 }

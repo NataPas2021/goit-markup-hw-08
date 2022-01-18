@@ -1,19 +1,23 @@
 .footer {
-  width: 100%;
+  flex-basis: 100%;
   display: block;
   align-items: center;
   background: #2f303a;
   color: $background-color;
-  padding-top: 60px;
-  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
 
+.footer__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
+}
+
 .footer__content {
-  width: 100%;
+  flex-basis: 100%;
   display: block;
   text-align: center;
 
@@ -25,7 +29,8 @@
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    justify-content: center;
+    /*justify-content: space-between;*/
+    /*justify-content: center;*/
     align-items: baseline;
   }
 }
@@ -33,39 +38,39 @@
 .footer__item {
   display: block;
   margin-bottom: 60px;
-
   &:last-child {
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 768px) {
-    /*&:first-child {
-      margin-right: 165px;
-      margin-left: 76px;
-    }*/
-    margin-bottom: 60px;
-    /*&:last-child {
-      margin-left: 159px;
-    }*/
-  }
+  /*@media screen and (min-width: 768px) {
+    &:first-child {
+      vertical-align: middle;
+    }
+  }*/
 
   @media screen and (min-width: 1200px) {
-    margin-left: 70px;
+    text-align: left;
+    margin-bottom: 0;
     &:first-child {
-      margin-left: 0px;
+      margin-right: 85px;
+    }
+    &:nth-child(2) {
+      margin-right: 93px;
+    }
+    &:last-child {
+      padding-top: 0;
     }
   }
 }
 
-.footer__item--margin {
+/*.footer__item--margin {
   display: block;
   align-items: center;
 
   @media screen and (min-width: 1200px) {
     display: inline-block;
-    margin-left: 90px;
   }
-}
+}*/
 
 .footer__contact {
   font-style: inherit;

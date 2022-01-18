@@ -1,37 +1,29 @@
 .advantages {
-  /*margin-top: o;*/
   display: flex;
   flex-direction: column;
-  flex-basis: calc(100% - 30px);
-  margin-left: auto;
-  margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 30px) / 2);
     margin: -15px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    flex-basis: (100% - 8 * 15px);
   }
 }
 
 .advantages__item {
-  flex-basis: auto;
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    /*flex-basis: calc((100% - 2 * 30px) / 2);*/
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    /*flex-basis: calc(100% - 8 * 15px);*/
+    flex-basis: calc(100% - 8 * 15px);
   }
 }
 
@@ -54,7 +46,6 @@
 .advantages__icon {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 30px);
   height: 120px;
 
   margin-bottom: 30px;
@@ -66,7 +57,6 @@
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 30px) / 2);
 
     &:first-child {
       margin-left: 0;
@@ -74,7 +64,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: (100% - 8 * 15px);
     flex-direction: row;
     flex-wrap: no-wrap;
     margin-right: 0;
@@ -82,8 +71,7 @@
 }
 
 .advantages__text {
-  /*width: 450px;*/
-  height: 75px;
+  max-height: 50px;
 
   font-family: $main-font;
   font-weight: 400;
@@ -93,12 +81,6 @@
   color: $paragraph-color;
 
   @media screen and (min-width: 768px) {
-    /*width: 354px;*/
-    height: 75px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    /*width: 270px;*/
-    height: 75px;
+    max-height: 75px;
   }
 }
