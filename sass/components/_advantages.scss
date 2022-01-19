@@ -15,6 +15,7 @@
 
 .advantages__item {
   flex-direction: column;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
