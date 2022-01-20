@@ -37,7 +37,7 @@
                         <ul class="contact-info">
                             <li class="contact-info__item">
                                 <a href="tel:+380991111111" class="contact-info__link contact-info__link--telephone">
-                                    <svg class="contact-info__icon-smartphone" width="10" height="16">
+                                    <svg class="contact-info__icon-smartphone">
                                         <use href="./images/icons.svg#icon-smartphone"></use>
                                     </svg>
                                     +38 096 111 11 11
@@ -46,7 +46,7 @@
 
                             <li class="contact-info__item">
                                 <a href="mailto:info@example.com" class="contact-info__link contact-info__link--mail">
-                                    <svg class="contact-info__icon-envelope" width="16" height="12">
+                                    <svg class="contact-info__icon-envelope">
                                         <use href="./images/icons.svg#icon-envelope"></use>
                                     </svg>
                                     info@example.com
@@ -147,7 +147,10 @@
               <ul class="what-we-do__list">
                   <li class="what-we-do__set">
                       <div class="what-we-do__box">
-                         <img src="./images/whatwedo1.jpg" alt="Работа за пк" width=370>
+                         <img 
+                           srcset="./images/whatwedo1.jpg 1x, ./images/whatwedo1@2x.jpg 2x"
+                           src="./images/whatwedo1.jpg"
+                           alt="Работа за пк" width=370>
                          <h3 class="what-we-do__text">Десктопные приложения</h3>
                       </div>
                       
@@ -155,14 +158,19 @@
 
                   <li class="what-we-do__set">
                       <div class="what-we-do__box">
-                         <img src="./images/whatwedo2.jpg" alt="Работа за пк с телефоном" width=370>
+                         <img 
+                           srcset="./images/whatwedo2.jpg 1x, ./images/whatwedo2@2x.jpg 2x"
+                           src="./images/whatwedo2.jpg"
+                           alt="Работа за пк с телефоном" width=370>
                          <h3 class="what-we-do__text">Мобильные приложения</h3>
                       </div>
                   </li>
 
                   <li class="what-we-do__set">
                       <div class="what-we-do__box">
-                         <img src="./images/whatwedo3.jpg" alt="Планшет в руках" width=370>
+                         <img
+                          srcset="./images/whatwedo3.jpg 1x, ./images/whatwedo3@2x.jpg"
+                          src="./images/whatwedo3.jpg" alt="Планшет в руках" width=370>
                          <h3 class="what-we-do__text">Дизайнерские решения</h3>
                       </div>
                     
@@ -177,7 +185,18 @@
                 <h2 class="team__title">Наша команда</h2>
               <ul class="team__list">
                 <li class="employee">
-                    <img class="employee__photo" src="./images/teamIhor.jpg" alt="фото Игорь" width=270 height=260>
+                    <img 
+                         srcset="
+                           ./images/team/teamIhor-desc-270.jpg 450w,
+                           ./images/team/teamIhor-tab-354.jpg 354w,
+                           ./images/team/teamIhor-mob-450.jpg 450w,
+                           ./images/team/teamIhor-desc-540@2x.jpg 540w,
+                           ./images/team/teamIhor-tab-708@2x.jpg 708w,
+                           ./images/team/teamIhor-mob-900@2x.jpg 900w
+                           " 
+                         src="./images/team/teamIhor-mob-450.jpg" 
+                         alt="фото Игорь"
+                         sizes="(min-width: 1200px) 25vw, (min-width: 576px) 50vw, 100vw">
                     <div class="employee__card">
                         <h3 class="employee__name">Игорь Демьяненко</h3>
                         <p lang="en" class="employee__position">Product Designer</p>
@@ -219,7 +238,18 @@
                 </li>
 
                 <li class="employee">
-                    <img class="item-photo" src="./images/teamOlga.jpg" alt="фото Ольга" width=270 class="team-photo">
+                    <img
+                         srcset="
+                           ./images/team/teamOlga-desc-270.jpg 450w,
+                           ./images/team/teamOlga-tab-354.jpg 354w,
+                           ./images/team/teamOlga-mob-450.jpg 450w,
+                           ./images/team/teamOlga-desc-540@2x.jpg 540w,
+                           ./images/team/teamOlga-tab-708@2x.jpg 708w,
+                           ./images/team/teamOlga-mob-900@2x.jpg 900w
+                           " 
+                         src="./images/team/teamOlga-mob-450.jpg"
+                         alt="фото Ольга"
+                         sizes="(min-width: 1200px) 25vw, (min-width: 576px) 50vw, 100vw">
                     <div class="employee__card">
                         <h3 class="employee__name">Ольга Репина</h3>
                         <p lang="en" class="employee__position">Frontend Developer</p> 
@@ -260,7 +290,18 @@
                 </li>
 
                 <li class="employee">
-                    <img class="item-photo" src="./images/teamNikolai.jpg" alt="фото Николай" width=270 class="team-photo">
+                    <img
+                       srcset="
+                           ./images/team/teamNikolai-desc-270.jpg 450w,
+                           ./images/team/teamNikolai-tab-354.jpg 354w,
+                           ./images/team/teamNikolai-mob-450.jpg 450w,
+                           ./images/team/teamNikolai-desc-540@2x.jpg 540w,
+                           ./images/team/teamNikolai-tab-708@2x.jpg 708w,
+                           ./images/team/teamNikolai-mob-900@2x.jpg 900w
+                           " 
+                       src="./images/team/teamNikolai-mob-450.jpg"
+                       alt="фото Николай"
+                       sizes="(min-width: 1200px) 25vw, (min-width: 576px) 50vw, 100vw">
                     <div class="employee__card">
                         <h3 class="employee__name">Николай Тарасов</h3>
                         <p lang="en" class="employee__position">Marketing</p>
@@ -301,7 +342,18 @@
                     
                 </li>
                 <li class="employee">
-                    <img class="item-photo" src="./images/teamMihail.jpg" alt="фото Михаил" width=270 class="team-photo">
+                    <img
+                       srcset="
+                           ./images/team/teamMihail-desc-270.jpg 450w,
+                           ./images/team/teamMihail-tab-354.jpg 354w,
+                           ./images/team/teamMihail-mob-450.jpg 450w,
+                           ./images/team/teamMihail-desc-540@2x.jpg 540w,
+                           ./images/team/teamMihail-tab-708@2x.jpg 708w,
+                           ./images/team/teamMihail-mob-900@2x.jpg 900w
+                           " 
+                       src="./images/team/teamMihail-mob-450.jpg"
+                       alt="фото Михаил"
+                       sizes="(min-width: 1200px) 25vw, (min-width: 576px) 50vw, 100vw">
                     <div class="employee__card">
                         <h3 class="employee__name">Михаил Ермаков</h3>
                         <p lang="en" class="employee__position">UI Designer</p>
@@ -531,7 +583,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>  
-    <script src="./js/menu.js"></script> 
+    <script src="./js/mobile-menu.js"></script> 
 </body>
 </html>
 

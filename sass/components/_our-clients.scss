@@ -32,10 +32,10 @@
 
 .client {
   display: flex;
-  flex-basis: calc((100% - 4 * 15px) / 2);
-  height: 92px;
+  flex-basis: 100%;
   justify-content: center;
   align-items: center;
+  height: 92px;
   margin: 15px;
 
   background-color: $background-color;
@@ -47,6 +47,11 @@
   &.client:hover,
   &.client:focus {
     border-color: $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-basis: calc((100% - 4 * 15px) / 2);
   }
 
   @media screen and (min-width: 768px) {
@@ -70,11 +75,8 @@
 }
 
 .client__icon {
-  display: flex;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
   fill: #afb1b8;
 
   transition: fill 250ms $timing-function, border-color 250ms $timing-function;
@@ -83,4 +85,11 @@
   .client:focus & {
     fill: $accent-color;
   }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
+
+  justify-content: center;
+  align-items: center;
 }

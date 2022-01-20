@@ -188,10 +188,34 @@
   }
 }
 
-.contact-info__icon-envelope,
+.contact-info__icon-envelope {
+  fill: #757575;
+
+  align-items: center;
+  margin-right: 8px;
+  transition: fill 250ms $timing-function;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 14px;
+    height: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
 .contact-info__icon-smartphone {
   fill: #757575;
-  margin-right: 10px;
+  margin-right: 8px;
   align-items: center;
 
   transition: fill 250ms $timing-function;
@@ -203,10 +227,14 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    width: 10px;
+    height: 14px;
   }
 
   @media screen and (min-width: 1200px) {
+    margin-right: 10px;
     display: flex;
+    height: 16px;
   }
 }
 
