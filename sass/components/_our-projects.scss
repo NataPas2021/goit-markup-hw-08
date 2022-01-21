@@ -4,8 +4,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin: -15px;
   }
 
@@ -16,24 +14,18 @@
   }
 
   .project__item {
-    margin-bottom: 30px;
     overflow: hidden;
-    cursor: pointer;
 
-    /*max-height: 404px;*/
-    border: 1px solid #eeeeee;
-
-    transition: opacity 250ms $timing-function, box-shadow 250ms $timing-function,
-      bottom 250ms $timing-function;
-
-    &:hover,
-    &:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:last-child {
+      margin-bottom: 0;
     }
 
-    @media screen and (min-width: 768px) {
-      display: flex;
+    @media screen and (min-width: 480px), (max-width: 767px) {
+      flex-basis: calc(100% - 2 * 15px);
+      margin: 30px;
+    }
+
+    @media screen and (min-width: 768px), (max-width: 1199px) {
       flex-basis: calc((100% - 4 * 15px) / 2);
       margin: 15px;
       &:last-child(2) {
@@ -44,17 +36,64 @@
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 6 * 15px) / 3);
     }
+
+    @media screen and (max-width: 767px) {
+      margin: 0;
+      margin-bottom: 30px;
+    }
   }
 }
 
-.project-link {
+.project__link {
   display: flex;
   flex-direction: column;
-}
 
-.project__thumb {
-  position: relative;
-  overflow: hidden;
+  cursor: pointer;
+
+  border: 1px solid #eeeeee;
+
+  transition: opacity 250ms $timing-function, box-shadow 250ms $timing-function,
+    bottom 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and (max-width: 1199px) {
+    height: 100%;
+  }
+
+  .project__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project__content {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+
+    @media screen and (min-width: 768px) {
+      flex-grow: 1;
+    }
+
+    .project__name {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      color: $title-text-color;
+    }
+
+    .project__type {
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.03em;
+      color: $paragraph-color;
+      margin-top: 4px;
+    }
+  }
 }
 
 .project__uppertext {
@@ -85,33 +124,5 @@
   .project__link:focus & {
     opacity: 1;
     transform: translateY(0%);
-  }
-}
-
-.project__content {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-
-  @media screen and (min-width: 768px) {
-    flex-basis: 440px;
-    flex-grow: 1;
-  }
-
-  .project__name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: $title-text-color;
-  }
-
-  .project__type {
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: $paragraph-color;
-    margin-top: 4px;
   }
 }
