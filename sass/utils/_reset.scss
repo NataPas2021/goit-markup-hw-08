@@ -2,6 +2,7 @@ body {
   color: $title-text-color;
   font-family: $main-font;
   letter-spacing: 0.03em;
+  min-width: 320px;
 
   .modal-open {
     overflow: hidden;

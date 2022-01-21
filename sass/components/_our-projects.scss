@@ -53,7 +53,13 @@
 }
 
 .project-link {
+  display: flex;
+  flex-direction: column;
   flex-basis: calc(100% -30px);
+
+  /* @media screen and (min-width: 768px) {
+    display: flex;
+  }*/
 }
 
 .project__thumb {
@@ -81,7 +87,7 @@
   color: $background-color;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  transform: translateY(101%);
 
   transition: transform 250ms $timing-function;
 
@@ -100,6 +106,10 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
   @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 4 * 15) / 2);
+    flex-grow: auto;
   }
 
   .project__name {
