@@ -1,11 +1,9 @@
 .projects {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
   font-family: $main-font;
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     flex-wrap: wrap;
     margin: -15px;
@@ -18,16 +16,11 @@
   }
 
   .project__item {
-    display: flex;
     margin-bottom: 30px;
-
     overflow: hidden;
-
     cursor: pointer;
 
-    flex-basis: calc(100% - $card-set-gap);
-
-    max-height: 404px;
+    /*max-height: 404px;*/
     border: 1px solid #eeeeee;
 
     transition: opacity 250ms $timing-function, box-shadow 250ms $timing-function,
@@ -40,6 +33,7 @@
     }
 
     @media screen and (min-width: 768px) {
+      display: flex;
       flex-basis: calc((100% - 4 * 15px) / 2);
       margin: 15px;
       &:last-child(2) {
@@ -56,11 +50,6 @@
 .project-link {
   display: flex;
   flex-direction: column;
-  flex-basis: calc(100% -30px);
-
-  /* @media screen and (min-width: 768px) {
-    display: flex;
-  }*/
 }
 
 .project__thumb {
@@ -100,16 +89,13 @@
 }
 
 .project__content {
-  flex-basis: calc(100% - 30px);
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 4 * 15) / 2);
+    flex-basis: 440px;
     flex-grow: 1;
   }
 
