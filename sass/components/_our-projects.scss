@@ -25,7 +25,8 @@
 
     cursor: pointer;
 
-    flex-basis: calc(100% - 30px);
+    flex-basis: calc(100% - $card-set-gap);
+
     max-height: 404px;
     border: 1px solid #eeeeee;
 
@@ -109,7 +110,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: calc((100% - 4 * 15) / 2);
-    flex-grow: auto;
+    flex-grow: 1;
   }
 
   .project__name {
