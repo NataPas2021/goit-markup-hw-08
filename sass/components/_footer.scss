@@ -29,8 +29,6 @@
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    /*justify-content: space-between;*/
-    /*justify-content: center;*/
     align-items: baseline;
   }
 }
@@ -41,12 +39,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-  /*@media screen and (min-width: 768px) {
-    &:first-child {
-      vertical-align: middle;
-    }
-  }*/
 
   @media screen and (min-width: 1200px) {
     text-align: left;
@@ -62,15 +54,6 @@
     }
   }
 }
-
-/*.footer__item--margin {
-  display: block;
-  align-items: center;
-
-  @media screen and (min-width: 1200px) {
-    display: inline-block;
-  }
-}*/
 
 .footer__contact {
   font-style: inherit;
