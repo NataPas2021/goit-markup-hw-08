@@ -40,8 +40,6 @@
 }
 
 .employee {
-  flex-basis: calc(100% - 2 * 15px);
-  max-height: 622px;
   margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -51,9 +49,14 @@
     margin-bottom: 0;
   }
 
+  @media screen and (min-width: 480px) {
+    flex-basis: calc(100% - 2 * 15px);
+    height: 622px;
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 4 * 15px) / 2);
-    max-height: 536px;
+    height: 536px;
     margin: 15px;
     &:nth-child(odd) {
       margin-left: 0;
@@ -69,7 +72,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% - 8 * 15px);
-    max-height: 428px;
+    height: 428px;
 
     &:nth-child(odd),
     &:nth-child(2n) {
