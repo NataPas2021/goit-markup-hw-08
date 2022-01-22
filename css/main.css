@@ -380,6 +380,14 @@ img {
   color: #757575;
 }
 
+@media screen and (max-width: 479px) {
+  .contact-info__link--mail,
+  .contact-info__link--telephone {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact-info__link--mail,
   .contact-info__link--telephone {
@@ -712,7 +720,7 @@ img {
   background-color: #c4c4c4;
 }
 
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 1), screen and (max-width: 767px) and (min-device-pixel-ratio: 1), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 480px) and (-o-min-device-pixel-ratio: 1/1), screen and (min-width: 480px) and (min-resolution: 96dpi), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 1/1), screen and (max-width: 767px) and (min-resolution: 96dpi), screen and (min-width: 480px) and (min-resolution: 1dppx), screen and (max-width: 767px) and (min-resolution: 1dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 1), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 480px) and (-o-min-device-pixel-ratio: 1/1), screen and (min-width: 480px) and (min-resolution: 96dpi), screen and (min-width: 480px) and (min-resolution: 1dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-mob.jpg);
     background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mob.jpg);
@@ -721,7 +729,7 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-mob@2x.jpg);
     background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mob@2x.jpg);
@@ -730,7 +738,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (max-width: 1199px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 1/1), screen and (min-width: 768px) and (min-resolution: 96dpi), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 1), screen and (max-width: 1199px) and (-o-min-device-pixel-ratio: 1/1), screen and (max-width: 1199px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-resolution: 1dppx), screen and (max-width: 1199px) and (min-resolution: 1dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 1/1), screen and (min-width: 768px) and (min-resolution: 96dpi), screen and (min-width: 768px) and (min-resolution: 1dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-tab.jpg);
     background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tab.jpg);
@@ -739,7 +747,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-o-min-device-pixel-ratio: 2/1), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-tab@2x.jpg);
     background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tab@2x.jpg);
@@ -1774,8 +1782,6 @@ img {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    /*justify-content: space-between;*/
-    /*justify-content: center;*/
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
@@ -1786,11 +1792,6 @@ img {
 .footer__item {
   display: block;
   margin-bottom: 60px;
-  /*@media screen and (min-width: 768px) {
-    &:first-child {
-      vertical-align: middle;
-    }
-  }*/
 }
 
 .footer__item:last-child {
@@ -1813,14 +1814,6 @@ img {
   }
 }
 
-/*.footer__item--margin {
-  display: block;
-  align-items: center;
-
-  @media screen and (min-width: 1200px) {
-    display: inline-block;
-  }
-}*/
 .footer__contact {
   font-style: inherit;
   font-size: 14px;
@@ -2129,11 +2122,11 @@ img {
           border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
-  -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  -o-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filtr .filtr__button:hover, .filtr .filtr__button:focus {
@@ -2174,7 +2167,7 @@ img {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 480px), (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .projects .project__item {
     -webkit-flex-basis: -webkit-calc(100% - 2 * 15px);
         -ms-flex-preferred-size: calc(100% - 2 * 15px);
@@ -2183,7 +2176,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px), (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .projects .project__item {
     -webkit-flex-basis: -webkit-calc((100% - 4 * 15px) / 2);
         -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);

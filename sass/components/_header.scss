@@ -177,6 +177,11 @@
   letter-spacing: 0.02em;
   color: $paragraph-color;
 
+  @media screen and (max-width: 479px) {
+    font-size: 24px;
+    line-height: normal;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 12px;
     line-height: 1.17;
