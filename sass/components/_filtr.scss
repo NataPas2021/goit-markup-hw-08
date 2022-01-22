@@ -42,6 +42,9 @@
 
     &:nth-child(4) {
       margin-left: 0;
+      @media screen and (min-width: 768px) {
+        margin-left: 8px;
+      }
     }
 
     @media screen and(max-width: 403px) {
@@ -60,14 +63,14 @@
 
   .filtr__button {
     padding: 6px 22px;
-    font-family: var(--main-font);
+    font-family: $main-font;
     background: #f5f4fa;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
+    color: $title-text-color;
     border-radius: 4px;
     border: 1px solid transparent;
     cursor: pointer;
