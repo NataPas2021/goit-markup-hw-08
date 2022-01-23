@@ -1,4 +1,7 @@
 .menu-button {
+  position: fixed;
+  top: 10px;
+  left: 90%;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -38,11 +41,12 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
+    position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;
-    height: 796px;
+    height: 100%;
 
     &.is-open {
       display: flex;

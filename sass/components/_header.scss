@@ -8,7 +8,7 @@
   padding: 16px 0;
   font-family: inherit;
   text-decoration: none;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
 
@@ -25,33 +25,31 @@
   position: relative;
   font-family: inherit;
   text-decoration: none;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
   width: 100%;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
     height: 16px;
   }
 }
 
 .nav-links__item {
   margin-bottom: 35px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 768px) {
     position: relative;
     display: flex;
-    margin-right: 50px;
+    margin-left: 50px;
     margin-bottom: 0;
+  }
 
-    &:not(:first-child) {
-      justify-content: space-between;
-
-      &:last-child {
-        margin-right: 0;
-        margin-bottom: 0;
-      }
-    }
+  &:first-child {
+    margin-left: 0;
   }
 
   .nav-links__link,
@@ -109,11 +107,12 @@
 
 .contact-info {
   width: 100%;
-  justify-content: left;
-  align-items: center;
+  /*flex-direction: column; 
+  justify-content: left;*/
+  text-align: left;
 
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-flex;
     flex-direction: column-reverse;
     justify-content: end;
     margin-left: 84px;
@@ -123,15 +122,17 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row-reverse;
+    margin-left: auto;
   }
 }
 
 .contact-info__item {
   color: $paragraph-color;
 
-  &:last-child {
-    font-size: 24px;
-    line-height: 1.17;
+  @media screen and (max-width: 767px) {
+    &:first-child {
+      margin-bottom: 32px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -146,6 +147,9 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: 30px;
+    &:last-child {
+      margin-left: 0;
+    }
 
     &:first-child {
       margin-top: 0px;
@@ -154,9 +158,6 @@
 
   .contact-info__link--mail,
   .contact-info__link--telephone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 500;
     font-size: 34px;
     line-height: 1.18;
@@ -169,6 +170,9 @@
     }
 
     @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 12px;
       line-height: 1.17;
     }
@@ -176,6 +180,12 @@
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.14;
+    }
+  }
+
+  .contact-info__link--telephone {
+    @media screen and (max-width: 767px) {
+      color: $accent-color;
     }
   }
 
