@@ -107,18 +107,11 @@ img {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
     height: 31px;
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 93px;
   }
 }
 
@@ -135,10 +128,10 @@ img {
   padding: 16px 0;
   font-family: inherit;
   text-decoration: none;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -268,8 +261,6 @@ img {
 
 .contact-info {
   width: 100%;
-  /*flex-direction: column; 
-  justify-content: left;*/
   text-align: left;
 }
 
@@ -1711,6 +1702,13 @@ img {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 

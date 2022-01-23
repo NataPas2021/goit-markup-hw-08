@@ -8,7 +8,7 @@
   padding: 16px 0;
   font-family: inherit;
   text-decoration: none;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 
@@ -107,8 +107,6 @@
 
 .contact-info {
   width: 100%;
-  /*flex-direction: column; 
-  justify-content: left;*/
   text-align: left;
 
   @media screen and (min-width: 768px) {
