@@ -5,20 +5,29 @@
 
 .site-nav {
   display: flex;
-  padding: 16px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: inherit;
   text-decoration: none;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 
-  @media screen and (min-width: 768px) {
-    padding: 21px 0;
+  @media screen and(min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 25px 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
+}
+
+.nav {
+  display: block;
 }
 
 .nav-links {
@@ -32,6 +41,7 @@
     display: flex;
     justify-content: center;
     height: 16px;
+    margin-right: 0 auto;
   }
 }
 
@@ -120,7 +130,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row-reverse;
-    margin-left: auto;
+    margin-left: 305px;
   }
 }
 

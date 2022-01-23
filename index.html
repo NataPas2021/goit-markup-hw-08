@@ -15,70 +15,65 @@
 </head>
 <body class="body">
     <header class="pageheader">
-            <div class="container">
-                <nav class="site-nav">
-                    <a href="/index.html" class="logo">
-                      <span class="logo__text--blue">Web</span class="logo__text--black">Studio
-                    </a>
-                   <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                       <svg width="20" height="20" aria-label="Переключатель мобильного меню">
-                           <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
-                           <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-                       </svg>
-                   </button>
-
-                   <div class="menu-container" id="menu-container" data-menu>
-                        <ul class="nav-links">
-                            <li class="nav-links__item"><a href="#" class="nav-links__link nav-links__link--active">Студия</a></li>
-                            <li class="nav-links__item"><a href="./portfolio.html" class="nav-links__link">Портфолио</a></li>
-                            <li class="nav-links__item"><a href="#" class="nav-links__link">Контакты</a></li>
-                        </ul>
-
-                        <ul class="contact-info">
-                            <li class="contact-info__item">
-                                <a href="tel:+380991111111" class="contact-info__link contact-info__link--telephone">
-                                    <svg class="contact-info__icon-smartphone">
-                                        <use href="./images/icons.svg#icon-smartphone"></use>
-                                    </svg>
-                                    +38 096 111 11 11
-                                </a>
-                            </li>
-
-                            <li class="contact-info__item">
-                                <a href="mailto:info@example.com" class="contact-info__link contact-info__link--mail">
-                                    <svg class="contact-info__icon-envelope">
-                                        <use href="./images/icons.svg#icon-envelope"></use>
-                                    </svg>
-                                    info@example.com
-                                </a>
-                            </li>
-                        
-                            
-                        </ul>
-
-                        <ul class="nav-links__social">
-                            <li class="nav-links__items">
-                                <a href="#" class="nav-links__text">Instagram</a>
-                            </li>
-
-                            <li class="nav-links__items">
-                                <a href="#" class="nav-links__text">Twitter</a>
-                            </li>
-
-                            <li class="nav-links__items">
-                                <a href="#" class="nav-links__text">Facebook</a>
-                            </li>
-
-                            <li class="nav-links__items">
-                                <a href="#" class="nav-links__text">LinkedIn</a>
-                            </li>
-                        </ul>
-                   </div>
-                   
-    
-                    
-                </nav>     
-            </div>        
+        <div class="container site-nav">
+            <a href="/index.html" class="logo">
+                <span class="logo__text--blue">Web</span><span class="logo__text--black">Studio</span>
+            </a>
+            <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+        
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li class="nav-links__item"><a href="#" class="nav-links__link nav-links__link--active">Студия</a></li>
+                        <li class="nav-links__item"><a href="./portfolio.html" class="nav-links__link">Портфолио</a></li>
+                        <li class="nav-links__item"><a href="#" class="nav-links__link">Контакты</a></li>
+                    </ul>
+                </nav>
+        
+                <ul class="contact-info">
+                    <li class="contact-info__item">
+                        <a href="tel:+380991111111" class="contact-info__link contact-info__link--telephone">
+                            <svg class="contact-info__icon-smartphone">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+        
+                    <li class="contact-info__item">
+                        <a href="mailto:info@example.com" class="contact-info__link contact-info__link--mail">
+                            <svg class="contact-info__icon-envelope">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@example.com
+                        </a>
+                    </li>
+                </ul>
+        
+                <ul class="nav-links__social">
+                    <li class="nav-links__items">
+                        <a href="#" class="nav-links__text">Instagram</a>
+                    </li>
+        
+                    <li class="nav-links__items">
+                        <a href="#" class="nav-links__text">Twitter</a>
+                    </li>
+        
+                    <li class="nav-links__items">
+                        <a href="#" class="nav-links__text">Facebook</a>
+                    </li>
+        
+                    <li class="nav-links__items">
+                        <a href="#" class="nav-links__text">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -218,7 +213,7 @@
                             </li>
              
                             <li class="employee__button">
-                                <a class="employee__link" href="#" class="facebook" aria-label="Facebook">
+                                <a class="employee__link" href="#" aria-label="Facebook">
                                     <svg class="employee__icon" width="20" height="20">
                                        <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
@@ -271,7 +266,7 @@
                             </li>
              
                             <li class="employee__button">
-                                <a class="employee__link" href="#" class="facebook" aria-label="Facebook">
+                                <a class="employee__link" href="#" aria-label="Facebook">
                                     <svg class="employee__icon" width="20" height="20">
                                        <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
@@ -315,7 +310,7 @@
                             </li>
              
                             <li class="employee__button">
-                                <a class="employee__link"href="#" aria-label="Twitter">
+                                <a class="employee__link" href="#" aria-label="Twitter">
                                      <svg class="employee__icon" width="20" height="20">
                                          <use href="./images/icons.svg#icon-twitter"></use>
                                      </svg>
@@ -323,7 +318,7 @@
                             </li>
              
                             <li class="employee__button">
-                                <a class="employee__link" href="#" class="facebook" aria-label="Facebook">
+                                <a class="employee__link" href="#" aria-label="Facebook">
                                     <svg class="employee__icon" width="20" height="20">
                                        <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
@@ -375,7 +370,7 @@
                             </li>
              
                             <li class="employee__button">
-                                <a class="employee__link" href="#" class="facebook" aria-label="Facebook">
+                                <a class="employee__link" href="#" aria-label="Facebook">
                                     <svg class="employee__icon" width="20" height="20">
                                        <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
@@ -559,7 +554,7 @@
     
                 <label class="form__label form__label--indent">
                     <span class="form__item">Комментарий</span>
-                    <textarea class="form__textarea" type="comments" rows="5" placeholder="Введите текст"
+                    <textarea class="form__textarea" rows="5" placeholder="Введите текст"
                         id="textarea"></textarea>
                 </label>
     
