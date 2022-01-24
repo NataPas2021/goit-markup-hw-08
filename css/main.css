@@ -824,9 +824,8 @@ img {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
-    max-width: 528px;
-    height: 100%;
-    max-height: 581px;
+    width: 528px;
+    height: 581px;
   }
 }
 
