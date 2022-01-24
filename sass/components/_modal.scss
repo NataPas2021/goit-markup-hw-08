@@ -1,5 +1,5 @@
 .modal {
-  position: fixed;
+  position: relative;
   max-width: 450px;
   max-height: 609px;
   margin: 0 auto;
@@ -17,6 +17,7 @@
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
+    width: 450px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -24,9 +25,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: 100%;
     width: 528px;
-    height: 581px;
   }
 }
 

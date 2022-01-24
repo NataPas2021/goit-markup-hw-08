@@ -789,7 +789,7 @@ img {
 }
 
 .modal {
-  position: fixed;
+  position: relative;
   max-width: 450px;
   max-height: 609px;
   margin: 0 auto;
@@ -810,6 +810,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .modal {
+    width: 450px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -821,11 +822,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    -webkit-flex-basis: 100%;
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
     width: 528px;
-    height: 581px;
   }
 }
 
